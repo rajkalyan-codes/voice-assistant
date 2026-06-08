@@ -1,2 +1,42 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+
+# Auto detect text files and normalize line endings
+* text=auto eol=lf
+
+# Python files
+*.py text diff=python eol=lf
+
+# Markdown files
+*.md text eol=lf
+
+# JSON files
+*.json text eol=lf
+
+# YAML files
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Shell scripts
+*.sh text eol=lf
+
+# Windows batch files
+*.bat text eol=crlf
+
+# Remove merge noise in binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.mp3 binary
+*.wav binary
+
+# Prevent GitHub from treating notebooks badly
+*.ipynb text
+
+# Ensure consistent encoding
+* text=auto working-tree-encoding=UTF-8
+
+# GitHub language detection improvement
+*.py linguist-language=Python
